@@ -1,0 +1,152 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="UI.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+
+</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+<body style="align-content:center;align-items:center;text-align:center;">
+    <form id="main" runat="server" style="position:relative;padding-bottom:50px;">           
+    <div class="navbar navbar-inverse navbar-fixed-top" style="height:50px; position:relative;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>            
+            </div>            
+            <div style="z-index:1;margin-top:7px;position:absolute;top:-3px;">                
+                <a runat="server" CssClass="form-control" href="Home.aspx"><img class="img-circle" src="../Assets/Images/Homepage/logo.jpeg" style="height:42px;width:42px;"/>WolfCart</a>                
+            </div>
+            <div class="navbar-collapse collapse" style="float:right;">
+                <ul class="nav navbar-nav">                    
+                    <li style="margin-top:7px;">
+                        <asp:TextBox ID="TxtSearch" placeholder="Search Product" runat="server" CssClass="form-control searchBar" BackColor="#666666" ForeColor="White" BorderStyle="None" ></asp:TextBox>                            
+                    </li>
+                    <li style="margin-top:7px;">
+                        <asp:DropDownList ID="DropDownList1" runat="server" CssClass="form-control Dropdownlist" BackColor="#666666" ForeColor="White" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                            <asp:ListItem Selected="True" >Electronics</asp:ListItem>
+                            <asp:ListItem >Men</asp:ListItem>
+                            <asp:ListItem >Women</asp:ListItem>
+                            <asp:ListItem >Groceries</asp:ListItem>
+                            <asp:ListItem >Books</asp:ListItem>
+                            
+                        </asp:DropDownList>
+                          </li>
+                    <li style="margin-top:7px;">
+                        <asp:LinkButton ID="btnSearch" runat="server" CssClass="searchButton" BorderStyle="None" OnClick="btnSearch_Click">
+                        <span aria-hidden="true" class="glyphicon glyphicon-search" style="top:-5px;"></span>
+                        </asp:LinkButton>
+                    </li>
+                    
+                    <li>
+                        
+                        <a href="~/Category/ProductList.aspx?cid=1" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Electronics <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <asp:LinkButton ID="LnkLaptops" runat="server" OnClick="LnkLaptops_Click">Laptops</asp:LinkButton></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=2">Mobiles</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Men <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=3">Shirts</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=4">Trousers</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Women <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=5">Sarees</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=6">Kurtis</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Groceries <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=7">Vegetables</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=8">Fruits</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        Books <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=9">Novels</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a runat="server" href="~/Category/ProductList.aspx?id=10">Sci-Fi</a></li>
+                            <li role="separator" class="divider"></li>
+                        </ul>
+                    </li>
+                    <li>                       
+                         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/User/Profile.aspx" Visible="False"></asp:HyperLink>
+                         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/User/Login.aspx">Login&SignUp</asp:HyperLink>
+                                               
+                   </li>
+                    <li>
+                        <asp:LinkButton ID="LinkButton1" runat="server" OnClick="SignOutClick" Visible="False">Sign Out</asp:LinkButton>
+                       
+                    </li>
+                    <li>
+                            <a runat="server" href="~/User/ShoppingCart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span></a>                         
+                   </li>
+            </ul>
+        </div>
+    </div>
+ </div>
+    <asp:ContentPlaceHolder ID="MainContent" runat="server" >
+    </asp:ContentPlaceHolder >      
+</form>
+
+
+
+<footer class="footer" style="background-color:black;">
+
+  
+ 
+  <div class="footer-copyright text-center py-3">© 2019 Copyright:
+     WolfCart
+  </div>
+ 
+
+</footer>
+</body>
+</html>

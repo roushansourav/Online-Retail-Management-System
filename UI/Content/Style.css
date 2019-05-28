@@ -1,0 +1,20 @@
+﻿.Dropdownlist
+{
+    border-radius:0px;
+    border:none;
+}
+.searchBar{
+    border-top-right-radius:0px;
+    border-bottom-right-radius:0px;
+    
+}
+.searchButton {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.carousel_reset {
+    position: relative;
+}
+.panel_adjust{
+    position:relative;
+}

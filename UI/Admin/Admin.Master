@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="UI.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/Style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+             <div class="navbar navbar-inverse navbar-fixed-top" style="height:50px; position:relative;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>            
+            </div>            
+            <div style="z-index:1;margin-top:7px;position:absolute;">                
+                <a runat="server" CssClass="form-control" href="Index.aspx"><img class="img-circle" src="../Assets/Images/Homepage/logo.jpeg" style="height:42px;width:42px;"/>WolfCart</a>                
+            </div>
+            <div class="navbar-collapse collapse" style="float:right;">
+                <ul class="nav navbar-nav">                    
+                    
+                    <li>
+                        <a runat="server" href="~/Admin/Product.aspx">
+                        Products 
+                        </a>
+                   </li>
+                    <li>
+                        <a runat="server" href="~/Admin/Category.aspx">
+                        Category 
+                        </a>
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Admin/SubCategory.aspx">
+                        Sub-Category
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a runat="server" href="~/Admin/SalesOffer.aspx">Offers
+                        
+                        </a>
+                        
+                    </li>
+                    
+                    
+                    <li>
+                        <a runat="server" href="~/Admin/User.aspx">Users 
+                        
+                        </a>
+                        
+                    </li>
+                    
+                    <li>                       
+                         <asp:HyperLink ID="HLnkProfile" runat="server" NavigateUrl="#" Visible="False"></asp:HyperLink>
+                         <asp:HyperLink ID="HLnkLogin" runat="server" NavigateUrl="~/User/Login.aspx">Login&SignUp</asp:HyperLink>
+                                               
+                   </li>
+                     <li>
+                        <asp:LinkButton ID="LnkSignOut" runat="server" OnClick="SignOutClick" Visible="False">Sign Out</asp:LinkButton>
+                       
+                    </li>
+                    
+            </ul>
+        </div>
+    </div>
+    </div>
+            <asp:ContentPlaceHolder ID="Admin_Master" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

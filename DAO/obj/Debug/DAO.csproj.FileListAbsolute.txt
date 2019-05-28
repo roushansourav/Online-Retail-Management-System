@@ -1,0 +1,9 @@
+D:\Online-Retail-Management-System\DAO\bin\Debug\DAO.dll
+D:\Online-Retail-Management-System\DAO\bin\Debug\DAO.pdb
+D:\Online-Retail-Management-System\DAO\bin\Debug\Model.dll
+D:\Online-Retail-Management-System\DAO\bin\Debug\Model.pdb
+D:\Online-Retail-Management-System\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
+D:\Online-Retail-Management-System\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+D:\Online-Retail-Management-System\DAO\obj\Debug\DAO.csproj.CopyComplete
+D:\Online-Retail-Management-System\DAO\obj\Debug\DAO.dll
+D:\Online-Retail-Management-System\DAO\obj\Debug\DAO.pdb

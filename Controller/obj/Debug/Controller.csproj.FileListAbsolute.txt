@@ -1,0 +1,17 @@
+E:\Online-Retail-Management-Systems\Controller\bin\Debug\Controller.dll
+E:\Online-Retail-Management-Systems\Controller\bin\Debug\Controller.pdb
+E:\Online-Retail-Management-Systems\Controller\obj\Debug\Controller.csprojAssemblyReference.cache
+E:\Online-Retail-Management-Systems\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+E:\Online-Retail-Management-Systems\Controller\obj\Debug\Controller.dll
+E:\Online-Retail-Management-Systems\Controller\obj\Debug\Controller.pdb
+D:\Online-Retail-Management-System\Controller\bin\Debug\Controller.dll
+D:\Online-Retail-Management-System\Controller\bin\Debug\Controller.pdb
+D:\Online-Retail-Management-System\Controller\obj\Debug\Controller.csprojAssemblyReference.cache
+D:\Online-Retail-Management-System\Controller\obj\Debug\Controller.csproj.CoreCompileInputs.cache
+D:\Online-Retail-Management-System\Controller\obj\Debug\Controller.dll
+D:\Online-Retail-Management-System\Controller\obj\Debug\Controller.pdb
+D:\Online-Retail-Management-System\Controller\bin\Debug\DAO.dll
+D:\Online-Retail-Management-System\Controller\bin\Debug\Model.dll
+D:\Online-Retail-Management-System\Controller\bin\Debug\DAO.pdb
+D:\Online-Retail-Management-System\Controller\bin\Debug\Model.pdb
+D:\Online-Retail-Management-System\Controller\obj\Debug\Controller.csproj.CopyComplete
