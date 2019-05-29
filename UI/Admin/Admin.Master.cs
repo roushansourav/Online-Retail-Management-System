@@ -21,8 +21,14 @@ namespace UI.Admin
         }
         protected void SignOutClick(object sender, EventArgs e)
         {
-            
+
             Session.Clear();
+            Random rnd = new Random();
+            Session["UserId"] = Session["UserId"] != null ? Session["UserId"] : rnd.Next(1, 2345); ;
+            Session["Name"] = Session["Name"] != null ? Session["Name"] : null;
+            Session["Username"] = Session["Username"] != null ? Session["Username"] : null;
+            Session["Role"] = Session["Role"] != null ? Session["Role"] : "guest";
+            Session["CartId"] = Session["CartId"] != null ? Session["CartId"] : rnd.Next(2346, 9999);
             HLnkLogin.Visible = true;
             HLnkProfile.Visible = false;
             LnkSignOut.Visible = false;

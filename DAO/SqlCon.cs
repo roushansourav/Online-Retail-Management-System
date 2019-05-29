@@ -8,6 +8,6 @@ namespace DAO
 {
     public class SqlCon
     {
-        public static string constring = @"initial catalog=orms;data source=DESKTOP-OBKAJFV\SQLSERVER2014;integrated security=true";
+        public static string constring = @"initial catalog=orms;data source=CGI-JAVA-055\CGI;integrated security=true";
     }
 }

@@ -16,3 +16,9 @@ D:\Online-Retail-Management-System\Model\obj\Debug\Model.csprojAssemblyReference
 D:\Online-Retail-Management-System\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 D:\Online-Retail-Management-System\Model\obj\Debug\Model.dll
 D:\Online-Retail-Management-System\Model\obj\Debug\Model.pdb
+E:\Online-Retail-Management-System\Model\bin\Debug\Model.dll
+E:\Online-Retail-Management-System\Model\bin\Debug\Model.pdb
+E:\Online-Retail-Management-System\Model\obj\Debug\Model.csprojAssemblyReference.cache
+E:\Online-Retail-Management-System\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+E:\Online-Retail-Management-System\Model\obj\Debug\Model.dll
+E:\Online-Retail-Management-System\Model\obj\Debug\Model.pdb

@@ -4,7 +4,7 @@
          <EmptyDataTemplate>
              <table class="container-fluid">
                  <tr>
-                     <td>No Prod.</td>
+                     <td>No Product Found.</td>
                  </tr>
              </table>
          </EmptyDataTemplate>
